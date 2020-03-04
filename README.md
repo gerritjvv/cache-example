@@ -1,6 +1,5 @@
 # Simple cache example
 
-
 This is an example for a simple in memory concurrent cache.
 
 ## Usage
@@ -24,6 +23,9 @@ int b = cache.get("b");
 cache.close();
 
 ```
+## Thread safety
+
+Each instance of ExpireCache is threadsafe.
 
 ## Enhancements left out
 
