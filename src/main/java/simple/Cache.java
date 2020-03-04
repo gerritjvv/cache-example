@@ -1,5 +1,6 @@
 package simple;
 
+import java.io.Closeable;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -8,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  * @param <K> key type
  * @param <V> value type
  */
-public interface Cache<K, V> {
+public interface Cache<K, V> extends Closeable {
 
     /**
      * Sets a value to a key in the cache.
